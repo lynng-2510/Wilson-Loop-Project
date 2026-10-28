@@ -51,6 +51,12 @@ static int read_env_int(
     return (int)value; // convert long to int
 }
 
+struct int spatial_coordinates(
+    const int x,
+    const int y,
+    const int z,
+);
+  
 static int wrap_mod(const int a, const int n){
     int r = a%n;
     return (r<0) ? r + n : r;
@@ -161,26 +167,28 @@ int main(int argc, char **argv){
     }
 
     // Define coordinates for quark (0, 0, 0) and antiquark (rx, ry, rz)
+    struct spatial_coordinates quark;
+    quark.x = 0; 
+    quark.y = 0; 
+    quark.z = 0; 
 
-    const int quark_x = 0;
-    const int quark_y = 0;
-    const int quark_z = 0;
+    struct spatial_coordinates antiquark;
+    antiquark.x = 2; 
+    antiquark.y = 2; 
+    antiquark.z = 0; 
 
-    const int antiquark_x = 2;
-    const int antiquark_y = 2;
-    const int antiquark_z = 0;
-
+    // Coordinates of E insertion probe
     const int probe_t = 2;
-    const int probe_x = quark_x;
-    const int probe_y = quark_y;
-    const int probe_z = quark_z;
+    const int probe_x = quark.x;
+    const int probe_y = quark.y;
+    const int probe_z = quark.z;
     
     const long probe_site = site4_index(probe_t, probe_x, probe_y, probe_z, L);
 
     // Compute shortest distance between quark-antiquark
-    int rx = wrap_mod((antiquark_x - quark_x), L[1]);
-    int ry = wrap_mod((antiquark_y - quark_y), L[2]);
-    int rz = wrap_mod((antiquark_z - quark_z), L[3]);
+    int rx = wrap_mod((antiquark.x - quark.x), L[1]);
+    int ry = wrap_mod((antiquark.y - quark.y), L[2]);
+    int rz = wrap_mod((antiquark.z - quark.z), L[3]);
 
     if(rx > (L[1]/2)) rx -=L[1];
     if(ry > (L[1]/2)) ry -=L[2];
@@ -216,6 +224,7 @@ int main(int argc, char **argv){
         printf("Quark - Antiquark Off-axis Separation Configuration:\n");
         printf("Quark Coordinates (%d, %d, %d), Antiquark Coordinates (%d, %d, %d)\n", quark_x, quark_y, quark_z, antiquark_x, antiquark_y, antiquark_z);
         printf("Separation r: %.8e\n", magnitude_r);
+        printf("Insertion Probe Coordinates (%d, %d, %d, %d)", probe_t, probe_x, probe_y, probe_z);
         printf("Projected Chromoelectric Field (E_proj) at Quark Source:\n");
         for (int a = 0; a < 3; a++){
                 for (int b = 0; b < 3; b++) {
