@@ -1,0 +1,144 @@
+Reading gauge field: /home/m2427382/Wilson-Loop-Project/Em1/cnfg/Em1p4n52
+Average plaquette = 5.4010872850894887e-01
+Reading temporal eigenvectors t=0: /home/m2427382/Wilson-Loop-Project/Em1/cnfg/n52/eigenvectors/Em1p4n52_evec_t0.h5
+Reading temporal eigenvectors t=1: /home/m2427382/Wilson-Loop-Project/Em1/cnfg/n52/eigenvectors/Em1p4n52_evec_t1.h5
+Reading temporal eigenvectors t=2: /home/m2427382/Wilson-Loop-Project/Em1/cnfg/n52/eigenvectors/Em1p4n52_evec_t2.h5
+Reading temporal eigenvectors t=3: /home/m2427382/Wilson-Loop-Project/Em1/cnfg/n52/eigenvectors/Em1p4n52_evec_t3.h5
+Reading temporal eigenvectors t=4: /home/m2427382/Wilson-Loop-Project/Em1/cnfg/n52/eigenvectors/Em1p4n52_evec_t4.h5
+Reading temporal eigenvectors t=5: /home/m2427382/Wilson-Loop-Project/Em1/cnfg/n52/eigenvectors/Em1p4n52_evec_t5.h5
+Reading temporal eigenvectors t=6: /home/m2427382/Wilson-Loop-Project/Em1/cnfg/n52/eigenvectors/Em1p4n52_evec_t6.h5
+Reading temporal eigenvectors t=7: /home/m2427382/Wilson-Loop-Project/Em1/cnfg/n52/eigenvectors/Em1p4n52_evec_t7.h5
+Reading temporal eigenvectors t=8: /home/m2427382/Wilson-Loop-Project/Em1/cnfg/n52/eigenvectors/Em1p4n52_evec_t8.h5
+
+ RT source-average scan: cfg=52 Nv=10 R/a=0..4 T/a=1..8 T0Mode=fixed Nt0=1 rho_i=1
+META cfg=52 Lattice dimension 48 x 24 x 24 x 24
+Nv=10 Rmin=0 Rmax=4 Tmin=1 Tmax=8 T0Mode=fixed Nt0=1 T0Fixed=0 T0Start=0 T0Stride=1 NeededTimes=9 temporal_bc=periodic rho=constant
+T0_LIST[0]
+[RUN] T=1, R=1 Vector_r=(1,0,0) |r|=1.000
+E-insertion at T_insert_1=0, T_insert_2=1
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 1 1 13824 +1.2795426765660070e-08 +9.4458128228393570e-11
+[RUN] T=1, R=2 Vector_r=(2,0,0) |r|=2.000
+E-insertion at T_insert_1=0, T_insert_2=1
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 1 2 13824 +3.4586559132123835e-09 -5.3033055213524890e-11
+[RUN] T=1, R=3 Vector_r=(3,0,0) |r|=3.000
+E-insertion at T_insert_1=0, T_insert_2=1
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 1 3 13824 +1.5158201846537760e-09 -3.6508831750505302e-11
+[RUN] T=1, R=4 Vector_r=(4,0,0) |r|=4.000
+E-insertion at T_insert_1=0, T_insert_2=1
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 1 4 13824 +1.0644062749149128e-09 +1.7090691986180615e-10
+[RUN] T=2, R=1 Vector_r=(1,0,0) |r|=1.000
+E-insertion at T_insert=1
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 2 1 13824 +1.5892676930509161e-08 +6.2966938282986985e-11
+[RUN] T=2, R=2 Vector_r=(2,0,0) |r|=2.000
+E-insertion at T_insert=1
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 2 2 13824 +3.6378903472492823e-09 -4.0641153923148280e-11
+[RUN] T=2, R=3 Vector_r=(3,0,0) |r|=3.000
+E-insertion at T_insert=1
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 2 3 13824 +1.3528085323153061e-09 -7.2550786019460121e-11
+[RUN] T=2, R=4 Vector_r=(4,0,0) |r|=4.000
+E-insertion at T_insert=1
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 2 4 13824 +7.6483616490898552e-10 +9.2018298439363828e-11
+[RUN] T=3, R=1 Vector_r=(1,0,0) |r|=1.000
+E-insertion at T_insert_1=1, T_insert_2=2
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 3 1 13824 +9.8982410014691731e-09 +2.3423044733016812e-11
+[RUN] T=3, R=2 Vector_r=(2,0,0) |r|=2.000
+E-insertion at T_insert_1=1, T_insert_2=2
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 3 2 13824 +1.6889578429628406e-09 +6.5252074507262361e-11
+[RUN] T=3, R=3 Vector_r=(3,0,0) |r|=3.000
+E-insertion at T_insert_1=1, T_insert_2=2
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 3 3 13824 +3.9052268714541548e-10 -1.6190405465722147e-10
+[RUN] T=3, R=4 Vector_r=(4,0,0) |r|=4.000
+E-insertion at T_insert_1=1, T_insert_2=2
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 3 4 13824 +3.6714765779428763e-10 -5.9410691265668329e-12
+[RUN] T=4, R=1 Vector_r=(1,0,0) |r|=1.000
+E-insertion at T_insert=2
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 4 1 13824 +6.1374274894768403e-09 -8.2380964380986625e-11
+[RUN] T=4, R=2 Vector_r=(2,0,0) |r|=2.000
+E-insertion at T_insert=2
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 4 2 13824 +7.8206560915663752e-10 -8.7040891277611424e-11
+[RUN] T=4, R=3 Vector_r=(3,0,0) |r|=3.000
+E-insertion at T_insert=2
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 4 3 13824 +2.3470723984974861e-10 +3.8913687343413903e-13
+[RUN] T=4, R=4 Vector_r=(4,0,0) |r|=4.000
+E-insertion at T_insert=2
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 4 4 13824 +3.8579165992629125e-10 -2.3619419012536545e-11
+[RUN] T=5, R=1 Vector_r=(1,0,0) |r|=1.000
+E-insertion at T_insert_1=2, T_insert_2=3
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 5 1 13824 +3.9423439609277659e-09 +1.3124262403879533e-11
+[RUN] T=5, R=2 Vector_r=(2,0,0) |r|=2.000
+E-insertion at T_insert_1=2, T_insert_2=3
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 5 2 13824 +3.3875448255252122e-10 +1.1307754000994665e-10
+[RUN] T=5, R=3 Vector_r=(3,0,0) |r|=3.000
+E-insertion at T_insert_1=2, T_insert_2=3
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 5 3 13824 +9.5626273282752044e-11 +2.4117971265054899e-10
+[RUN] T=5, R=4 Vector_r=(4,0,0) |r|=4.000
+E-insertion at T_insert_1=2, T_insert_2=3
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 5 4 13824 +2.3908385305682109e-10 -7.1846911011522635e-11
+[RUN] T=6, R=1 Vector_r=(1,0,0) |r|=1.000
+E-insertion at T_insert=3
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 6 1 13824 +2.4683220532002404e-09 -1.4818551650246213e-10
+[RUN] T=6, R=2 Vector_r=(2,0,0) |r|=2.000
+E-insertion at T_insert=3
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 6 2 13824 +8.4161554640835796e-11 +4.8213347433129082e-11
+[RUN] T=6, R=3 Vector_r=(3,0,0) |r|=3.000
+E-insertion at T_insert=3
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 6 3 13824 +6.4568221834069169e-11 +4.9037723297727115e-11
+[RUN] T=6, R=4 Vector_r=(4,0,0) |r|=4.000
+E-insertion at T_insert=3
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 6 4 13824 +2.5774011449856526e-10 -6.5864203382864484e-11
+[RUN] T=7, R=1 Vector_r=(1,0,0) |r|=1.000
+E-insertion at T_insert_1=3, T_insert_2=4
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 7 1 13824 +1.6254272223835047e-09 -3.0256205564489357e-11
+[RUN] T=7, R=2 Vector_r=(2,0,0) |r|=2.000
+E-insertion at T_insert_1=3, T_insert_2=4
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 7 2 13824 +7.6332822480999242e-11 +2.6318195782856319e-14
+[RUN] T=7, R=3 Vector_r=(3,0,0) |r|=3.000
+E-insertion at T_insert_1=3, T_insert_2=4
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 7 3 13824 +1.5888930015194674e-10 +5.2278677828049706e-11
+[RUN] T=7, R=4 Vector_r=(4,0,0) |r|=4.000
+E-insertion at T_insert_1=3, T_insert_2=4
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 7 4 13824 +2.7274923467428602e-10 +1.4835841138404767e-10
+[RUN] T=8, R=1 Vector_r=(1,0,0) |r|=1.000
+E-insertion at T_insert=4
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 8 1 13824 +9.3698531410366089e-10 -1.3333983899349065e-10
+[RUN] T=8, R=2 Vector_r=(2,0,0) |r|=2.000
+E-insertion at T_insert=4
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 8 2 13824 +1.4549318763888615e-10 -6.0562363721681936e-13
+[RUN] T=8, R=3 Vector_r=(3,0,0) |r|=3.000
+E-insertion at T_insert=4
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 8 3 13824 +1.7419022969699667e-10 -6.2295095553526105e-11
+[RUN] T=8, R=4 Vector_r=(4,0,0) |r|=4.000
+E-insertion at T_insert=4
+# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]
+52 8 4 13824 -2.0771283162307642e-10 -1.8815102764091217e-11

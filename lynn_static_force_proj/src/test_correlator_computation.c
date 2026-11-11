@@ -1,4 +1,5 @@
 /* Computing the Laplacian correlator L(R,T) with E insertion on the temporal line at Quark source */
+/* with fixed T, R */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,7 +13,7 @@
 
 #define NV 10
 #define DEFAULT_RMAX 3
-#define DEFAULT_TMAX 4
+#define DEFAULT_TMAX 5
 
 static int site3_index(const int x, const int y, const int z, const int L[4]){
     return (x * L[2] + y) * L[3] + z;
@@ -65,7 +66,7 @@ static void su3_traceless_F_from_Q(
 ) {
     /* 
     Computing Field Strength Tensor:
-    
+
     F_munu = anti-Hermitian part of Q_munu with factor 1/8.
     then subtract the color tract to project to su(3)
     */
@@ -648,7 +649,7 @@ for (int source = 0; source < nt0; source++) {
         fflush(stdout);
     }
 
-    for (int T = 4; T <= tmax; T++){
+    for (int T = 5; T <= tmax; T++){
         for (int R = 3; R <= rmax; R++) {
             
             int rx = 0 + R;
@@ -668,9 +669,9 @@ for (int source = 0; source < nt0; source++) {
                 printf("[RUN] T=%d, R=%d Vector_r=(%d,%d,%d) |r|=%.3f\n", 
                         T, R, rx, ry, rz, magnitude_r);
                 if (num_insertions == 1) {
-                    printf("E-insertion at T-insert=%d\n", T / 2);
+                    printf("E-insertion at T_insert=%d\n", T / 2);
                 } else {
-                    printf("E-insertion at T-insert=%d, t=%d\n", T / 2, T / 2 + 1);
+                    printf("E-insertion at T_insert_1=%d, T_insert_2=%d\n", T / 2, T / 2 + 1);
                 }
                 fflush(stdout);
             }
